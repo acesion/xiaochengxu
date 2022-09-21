@@ -1,0 +1,61 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/index/index",
+    "pages/record/record",
+    "pages/plan/plan",
+    "pages/clock/clock",
+    "pages/test/test"
+  ],
+  "plugins": {
+    "calendar":{
+      "version": "1.1.3",
+      "provider": "wx92c68dae5a8bb046"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "selectedColor": "#1296db",
+    "backgroundColor": "white",
+    "borderStyle": "white",
+    "list": [
+      {
+       "pagePath": "pages/index/index",
+       "text": "家规",
+        "iconPath": "./images/index_no.png",
+        "selectedIconPath": "./images/index_yes.png"
+      },
+      {
+        "pagePath":  "pages/record/record",
+        "text": "记录",
+        "iconPath": "./images/record_no.png",
+        "selectedIconPath": "./images/record_yes.png"
+      },
+      {
+        "pagePath": "pages/plan/plan",
+        "text": "日程",
+        "iconPath": "./images/richeng_no.png",
+        "selectedIconPath": "./images/richeng_yes.png"
+      },
+      {
+        "pagePath": "pages/clock/clock",
+        "text": "打卡",
+        "iconPath": "./images/plan_no.png",
+        "selectedIconPath": "./images/plan_yes.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

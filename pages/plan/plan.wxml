@@ -1,0 +1,14 @@
+<calendar 
+
+calendar-style="calendar" 
+header-style="header"  
+board-style="board"
+bindnextMonth="next" 
+bindprevMonth="prev" 
+binddateChange="dateChange" 
+binddayClick="dayClick"
+weeks-type="cn"
+active-type="rounded" 
+days-color="{{dayStyle}}" 
+ />
+ 
