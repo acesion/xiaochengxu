@@ -15,7 +15,7 @@ Component({
     },
     title: { //标题
       type: String,
-      value: ''
+      value: '日历'
     },
     goNow: { // 是否有快速回到今天的功能
       type: Boolean,
@@ -33,9 +33,9 @@ Component({
     open: false,
     swiperCurrent: 1, //选中时间
     oldCurrent: 1, //之前选中时间
-    dateList0: [2022], //0位置的日历数组
-    dateList1: [10], //1位置的日历数组
-    dateList2: [22], //2位置的日历数组
+    dateList0: [], //0位置的日历数组
+    dateList1: [], //1位置的日历数组
+    dateList2: [], //2位置的日历数组
     swiperDuration: 500,
     swiperHeight: 0,
     backChange: false, //跳过change切换

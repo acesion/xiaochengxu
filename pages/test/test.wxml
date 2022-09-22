@@ -38,23 +38,30 @@
     <swiper-item wx:for="{{[dateList0, dateList1, dateList2]}}" wx:for-index="listIndex" wx:for-item="listItem" wx:key="listIndex">
       <view class="flex-start flex-wrap calendar-main" style="height:{{listItem.length/7*82}}rpx">
         <view wx:for="{{listItem}}" wx:key="dateList" class="day">
-          <view wx:for="{{point}}" wx:key="index">
+          <!-- <view wx:for="{{point}}" wx:key="index">
             <block wx:if="{{point[index]=='y2022m10d16'}}">
-            <text>666</text>
+              <text>666</text>
               <view class='spot'></view>
             </block>
-            <block wx:if="{{point[index] =='y2022m10d15'}}">
+            <block wx:if="{{point[index] =='y2022m10d15'}}"> -->
               <view class="bg {{(item.year === nowDay.year && item.month === nowDay.month && item.day === nowDay.day) ? 'now' : ''}} {{(item.year === selectDay.year && item.month === selectDay.month) ? (item.day === selectDay.day && oldCurrent === listIndex ?'select':''): 'other-month'}}" catchtap="selectChange" data-day="{{item.day}}" data-year="{{item.year}}" data-month="{{item.month}}">
                 {{item.day}}
               </view>
-            </block>
-          </view>
+            <!-- </block>
+          </view> -->
         </view>
       </view>
     </swiper-item>
   </swiper>
+  <block>
+    <view wx:for="{{point}}" wx:key="index">
+      <block wx:if="{{point[index]=='y2022m10d15'}}">
+      <text>666</text>
+        <view class='calendar.calendar-main.day.spot'></view>
+      </block>
+    </view>
+  </block>
   <view catchtap="openChange" class="flex list-open">
     <view class="icon {{open?'fold':'unfold'}}"></view>
   </view>
 </view>
-<text>{{point[0]}}+"123"</text>
